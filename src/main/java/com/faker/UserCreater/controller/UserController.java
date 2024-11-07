@@ -13,7 +13,7 @@ public class UserController {
 
 	@GetMapping("/generate-users")
 	public String generateUsers() {
-		userService.generateAndPostUsers(1_000_000); // Generate 1 million users
+		userService.generateAndPostUsers(1000000); // Generate 1000 users
 		return "User generation started!";
 	}
 }

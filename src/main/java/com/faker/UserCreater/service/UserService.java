@@ -45,6 +45,7 @@ public class UserService {
 		user.setEmail(faker.internet().emailAddress());
 		user.setAddress(faker.address().fullAddress());
 		user.setPhone(faker.phoneNumber().phoneNumber());
+		user.setCountry(faker.country().name());
 
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
